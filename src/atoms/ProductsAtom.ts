@@ -1,3 +1,5 @@
+import { atom } from "jotai";
+
 export interface IProducts{
     id: string,
     name: string,
@@ -5,3 +7,5 @@ export interface IProducts{
     description: string,
     image: string,
 }
+
+export const ProductsAtom = atom<IProducts[]>([])
