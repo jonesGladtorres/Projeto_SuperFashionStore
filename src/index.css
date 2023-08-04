@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@screen sm { /* Aplica os estilos abaixo para telas pequenas (tamanho 'sm') */
+  .ReactModal__Content--after-open.modal-mobile {
+    top: 50% !important;
+    left: 50% !important;
+    right: auto !important;
+    bottom: auto !important;
+    transform: translate(-50%, -50%) !important;
+    max-width: 90% !important;
+    width: auto !important;
+  }
+}
+
+@screen md { /* Aplica os estilos abaixo para telas médias e maiores (tamanho 'md' e acima) */
+  .ReactModal__Content--after-open.modal-large {
+      position: fixed !important;
+      top: 1rem !important;
+      left: auto !important;
+      right: 1rem !important;
+      bottom: auto !important;
+      transform: none !important;
+      max-width: 400px !important;
+      width: 100% !important;
+  }
+}
