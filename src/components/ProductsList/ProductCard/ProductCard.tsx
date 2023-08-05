@@ -18,7 +18,7 @@ export function ProductCard({product}: IProductCardProps){
     }
 
     return(
-        <li className="flex flex-col gap-4 items-center w-[280px] md:w-[320px] lg:w-[360px]">
+        <li className="flex flex-col gap-4 items-start w-[280px] md:w-[320px] lg:w-[360px] mb-[4rem]">
             <img src={product.image} alt={`Uma imagem de um ${product.name}`} className="w-full"/>
             <h3 className="text-xl font-bold font-sans">{product.name}</h3>
             <span className="text-lg font-medium">{`R$ ${product.price.toFixed(2)}`}</span>
