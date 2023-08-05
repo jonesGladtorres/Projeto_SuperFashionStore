@@ -1,7 +1,7 @@
 import { Footer } from "../../components/Footer/Footer"
 import { Header } from "../../components/Header/Header"
 import homeIMG from '../../assets/homeIMG.png'
-// import { ProductsList } from "../../components/ProductsList/ProductsList"
+import { ProductsList } from "../../components/ProductsList/ProductsList"
 
 
 export function HomePage() {
@@ -16,8 +16,8 @@ export function HomePage() {
                         <a href="#list" className="bg-black text-white flex items-center justify-center p-4 mt-4 w-full md:w-[50%] transition-all">CONFIRA AS OFERTAS</a>
                     </div>
                 </div>
-                <h2 className="text-3xl md:text-5xl font-bold font-sans leading-normal mt-8 mb-4">PRODUTOS EM DESTAQUES</h2>
-                {/* <ProductsList /> */}
+                <h2 className="text-3xl md:text-5xl font-bold font-sans leading-normal mt-[5rem] mb-[4rem]">PRODUTOS EM DESTAQUES</h2>
+                <ProductsList />
             </main>
             <Footer />
         </div>

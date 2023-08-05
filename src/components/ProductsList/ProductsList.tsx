@@ -5,7 +5,7 @@ import { IProducts } from "../../atoms/ProductsAtom";
 
 
 
-export async function ProductsList() {
+export function ProductsList() {
 
   const [productsList, setProductsList] = useState<IProducts[] | null>([]);
 
